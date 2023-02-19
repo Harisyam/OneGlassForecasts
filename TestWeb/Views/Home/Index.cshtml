@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model OneGlassForecasts.Web.Models.ForecastViewModel
+<style>
+    table {
+        width: 100%;
+    }
+
+        table th, table td {
+            border: 1px groove;
+        }
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Sales and Weather Forecasts for @Model.Location</h1>
+</div>
+
+<form method="post">
+
+    @Html.LabelFor(m => m.Location)
+
+    @Html.DropDownList("location", Enum.GetNames(typeof(OneGlassForecasts.Models.Location)).Select(x => new SelectListItem { Text = x, Value = x }), new { @class = "form-control", @value = Model.Location })
+
+    @Html.LabelFor(m => m.StartDate)
+    <input type="date" name="startDate" id="startDate" value="@Model.StartDate.ToString("yyyy-MM-dd")" required>
+
+    @Html.LabelFor(m => m.EndDate)
+    <input type="date" name="endDate" id="endDate" value="@Model.EndDate.ToString("yyyy-MM-dd")" required>
+
+    <button type="submit">Get Data</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Sales Quantity</th>
+            <th>Average Temperature</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (var i = 0; i < Model.Forecasts.Count; i++)
+        {
+            <tr>
+                <td>@Model.Forecasts[i].date.ToString("dd/MM/yyyy")</td>
+                <td>@Model.Forecasts[i].forecasted_sales_quantity</td>
+                <td>@Model.Weather[i].AverageTemperature</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button id="alertButton">Get Alerts</button>
+
+<div id="alertsDiv"></div>

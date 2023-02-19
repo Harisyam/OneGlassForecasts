@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.17
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneGlassForecasts.Data", "OneGlassMVP.Data\OneGlassForecasts.Data.csproj", "{F1C51FCA-9544-42E5-AD77-D3F578F2E28B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneGlassForecasts.Models", "OneGlassMVP.Models\OneGlassForecasts.Models.csproj", "{FC68A387-6A69-4B96-A3B5-D8D8D65313A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneGlassForecasts.Services", "OneGlassMVP.Services\OneGlassForecasts.Services.csproj", "{778D1DF9-7B06-47A8-8D5C-F9FD2F9148EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneGlassForecasts.Web", "TestWeb\OneGlassForecasts.Web.csproj", "{B305B709-833A-43C9-866D-F344C92E3CEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1C51FCA-9544-42E5-AD77-D3F578F2E28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C51FCA-9544-42E5-AD77-D3F578F2E28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C51FCA-9544-42E5-AD77-D3F578F2E28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C51FCA-9544-42E5-AD77-D3F578F2E28B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC68A387-6A69-4B96-A3B5-D8D8D65313A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC68A387-6A69-4B96-A3B5-D8D8D65313A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC68A387-6A69-4B96-A3B5-D8D8D65313A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC68A387-6A69-4B96-A3B5-D8D8D65313A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{778D1DF9-7B06-47A8-8D5C-F9FD2F9148EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{778D1DF9-7B06-47A8-8D5C-F9FD2F9148EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{778D1DF9-7B06-47A8-8D5C-F9FD2F9148EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{778D1DF9-7B06-47A8-8D5C-F9FD2F9148EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B305B709-833A-43C9-866D-F344C92E3CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B305B709-833A-43C9-866D-F344C92E3CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B305B709-833A-43C9-866D-F344C92E3CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B305B709-833A-43C9-866D-F344C92E3CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8508BF97-F267-4DE0-B576-6573024AFDA3}
+	EndGlobalSection
+EndGlobal
